@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🔥 Boutique Tendance - Offres Limitées</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffb347, #ffcc33);
+      color: #333;
+    }
+
+    header {
+      background-color: #e67e22;
+      padding: 15px 30px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff6e5;
+      min-width: 200px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      top: 100%;
+      left: 0;
+    }
+
+    .dropdown-content a {
+      color: #e67e22;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    nav li:hover .dropdown-content {
+      display: block;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2em;
+      color: #c0392b;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #555;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      font-size: 1.2em;
+      color: #e67e22;
+    }
+
+    .product p {
+      font-size: 0.95em;
+      color: #444;
+    }
+
+    .cta {
+      margin-top: 10px;
+      display: inline-block;
+      background-color: #e74c3c;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .cta:hover {
+      background-color: #c0392b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff6e5;
+      color: #888;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Boutique Tendance</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li>
+        <a href="#">Produits ⬇</a>
+        <div class="dropdown-content">
+          <a href="produit1.html">Masseur Cervical</a>
+          <a href="produit2.html">Mini Mixeur</a>
+          <a href="produit3.html">Brosse à Dents</a>
+        </div>
+      </li>
+      <li><a href="#offres">Offres Spéciales</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>🔥 Offres Éphémères : N'attendez Pas Demain</h2>
+  <p>Les meilleurs produits du moment, sélectionnés pour leur efficacité, leur popularité... et leur potentiel à changer votre quotidien.</p>
+</section>
+
+<section class="product-grid" id="offres">
+
+  <div class="product">
+    <img src="https://via.placeholder.com/300x200" alt="Masseur Cervical">
+    <h3>Masseur Cervical Intelligent</h3>
+    <p>Soulagez votre nuque en 5 minutes chrono. Recommandé par les kinés.</p>
+    <a class="cta" href="produit1.html">Je le veux 🔥</a>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/300x200" alt="Mini Mixeur">
+    <h3>Mini Mixeur USB</h3>
+    <p>Préparez vos smoothies partout ! Idéal pour une vie active et saine.</p>
+    <a class="cta" href="produit2.html">Profiter de l'offre 💥</a>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/300x200" alt="Brosse à Dents">
+    <h3>Brosse à Dents Sonic</h3>
+    <p>Nettoyage professionnel chez vous. Offrez-vous un sourire éclatant !</p>
+    <a class="cta" href="produit3.html">Voir le prix 🚀</a>
+  </div>
+
+</section>
+
+<footer>
+  *Ce site contient des liens affiliés. Vous ne payez pas plus cher, mais vous soutenez notre travail ❤️
+</footer>
+
+</body>
+</html>

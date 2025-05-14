@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Copie identique à produit1.html sauf : -->
+<title>Mini Mixeur USB | Boutique Tendance</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ffb347, #ffcc33);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px;
+      background: #fffbea;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+
+    h1 {
+      color: #e67e22;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 20px;
+      background: #e74c3c;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .cta:hover {
+      background: #c0392b;
+    }
+
+    #timer {
+      font-size: 1.2em;
+      color: #c0392b;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Mini Mixeur USB Rechargeable</h1>
+<img src="https://via.placeholder.com/700x400" alt="Mini Mixeur">
+<p>Préparez vos smoothies où que vous soyez. Compact, puissant et parfait pour une alimentation saine même en déplacement.</p>
+
+  
+  <p><strong>✅ Livraison gratuite • 🔒 Paiement sécurisé • ⭐ Noté 4.8/5</strong></p>
+  
+  <p id="timer"></p>
+  
+  <a href="https://www.amazon.fr/ton-lien-affilie-2" class="cta" target="_blank">Je le commande 💥</a>
+</div>
+
+<script>
+  const countdown = () => {
+    const now = new Date();
+    const deadline = new Date();
+    deadline.setMinutes(now.getMinutes() + 9);
+    const x = setInterval(() => {
+      const t = deadline - new Date();
+      const minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((t % (1000 * 60)) / 1000);
+      document.getElementById("timer").innerHTML =
+        "⏳ Offre expirant dans " + minutes + " min " + seconds + " sec";
+      if (t < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "Offre expirée 😔";
+      }
+    }, 1000);
+  };
+  countdown();
+</script>
+
+</body>
+</html>
